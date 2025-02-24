@@ -17,6 +17,14 @@ describe('GET /dewaweb', () => {
     });
 });
 
+describe('GET /test', () => {
+    it('should return Hello Dewaweb!', async () => {
+        const res = await request(app).get('/test');
+        expect(res.statusCode).toEqual(200);
+        expect(res.text).toContain('Test!');
+    });
+});
+
 // Close the server after all tests are done
 afterAll((done) => {
     server.close(done);

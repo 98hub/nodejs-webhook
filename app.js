@@ -15,6 +15,10 @@ app.get('/dewaweb', (req, res) => {
     res.sendFile(path.join(__dirname, 'views', 'dewaweb.html'));
 });
 
+app.get('/test', (req, res) => {
+    res.sendFile(path.join(__dirname, 'views', 'test.html'));
+});
+
 const PORT = process.env.PORT || 3000;
 const server = app.listen(PORT, () => {
     console.log(`Server running on port ${PORT}`);
