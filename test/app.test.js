@@ -18,7 +18,7 @@ describe('GET /dewaweb', () => {
 });
 
 describe('GET /test', () => {
-    it('should return Hello Dewaweb!', async () => {
+    it('should return Test!', async () => {
         const res = await request(app).get('/test');
         expect(res.statusCode).toEqual(200);
         expect(res.text).toContain('Test!');
