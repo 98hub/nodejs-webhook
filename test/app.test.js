@@ -13,7 +13,7 @@ describe('GET /dewaweb', () => {
     it('should return Hello Dewaweb!', async () => {
         const res = await request(app).get('/dewaweb');
         expect(res.statusCode).toEqual(200);
-        expect(res.text).toContain('Hello Dewaweb!');
+        expect(res.text).toContain('Hello Dewaweb Indonesia!');
     });
 });
 
